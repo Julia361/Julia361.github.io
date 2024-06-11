@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Головна - Магазин Спортивних Товарів</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="home_styles.css" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	 <style>
+		.product-grid {
+		  display: grid;
+		  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		  gap: 20px; /* Відстань між елементами */
+		}
+		.product-item {
+		  border: 1px solid #ddd; /* Додає рамку навколо кожного продукту */
+		  padding: 10px; /* Відступи всередині кожного продукту */
+		  text-align: center; /* Вирівнювання тексту по центру */
+		  box-sizing: border-box; /* Враховує padding і border в загальну ширину і висоту */
+		}
+		.product-item img {
+		  max-width: 100%;
+		  height: auto;
+		}
+		.price {
+		  display: block;
+		  margin: 10px 0;
+		  font-size: 1.2em;
+		  color: #333;
+		}
+		.btn {
+		  display: inline-block;
+		  padding: 10px 20px;
+		  background-color: #007bff;
+		  color: #fff;
+		  text-decoration: none;
+		  border-radius: 5px;
+		}
+		.btn:hover {
+		  background-color: #0056b3;
+		}
+		.articles .container {
+		  display: grid;
+		  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		  gap: 20px;
+		}
+		.article-link {
+		  text-decoration: none; /* Видаляє стандартне підкреслення з посилань */
+		  color: inherit; /* Спадковий колір для тексту */
+		}
+		.article-link article {
+		  border: 1px solid #ddd;
+		  padding: 10px;
+		  text-align: center;
+		  box-sizing: border-box;
+		}
+		.article-link img {
+		  max-width: 100%;
+		  height: auto;
+		}
+	 </style>
+
+	</head>
+  <body>
+    <header>
+        <div class="logo">
+          <h1>Магазин Спортивних Товарів</h1>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="articles.html">Статті</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+				<li><a href="cart.html">Кошик</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h2>Спортивні товари для активного стилю життя</h2>
+          <p>Вибирайте найкращі товари для спорту та відпочинку</p>
+          <a href="catalog.html" class="btn">Перейти до каталогу</a>
+        </div>
+      </section>
+
+      <section class="categories">
+        <div class="container">
+          <h2>Популярні категорії</h2>
+          <div class="category-grid">
+            <div class="category-item">
+              <img
+                src="img/imgonline-com-ua-Resize-nGueRAN6CV.jpg"
+                alt="Одяг"
+              />
+              <h3>Одяг</h3>
+            </div>
+            <div class="category-item">
+              <img
+                src="img/imgonline-com-ua-Resize-nf7OhMosPC.jpg"
+                alt="Взуття"
+              />
+              <h3>Взуття</h3>
+            </div>
+            <div class="category-item">
+              <img src="img/401108737.webp" alt="Спортивний інвентар" />
+              <h3>Спортивний інвентар</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="promotions">
+        <div class="container">
+          <h2>Спеціальні пропозиції</h2>
+          <div class="promotions-grid">
+            <div class="promotion-item">
+              <img
+                src="img/a5421d10-c01e-40ab-b732-3763649ddd53.jpg"
+                alt="Знижки на одяг"
+              />
+              <h3>Знижки на одяг</h3>
+              <p>Отримайте знижку до 50% на нову колекцію одягу</p>
+            </div>
+            <div class="promotion-item">
+              <img src="img/sprt_1.jpg" alt="Розпродаж взуття" />
+              <h3>Розпродаж взуття</h3>
+              <p>Великий вибір взуття за акційними цінами</p>
+            </div>
+            <div class="promotion-item">
+              <img
+                src="img/75ffe70b-5674-450b-85a6-f1f439a292ce.jpg"
+                alt="Акції на спортивний інвентар"
+              />
+              <h3>Акції на спортивний інвентар</h3>
+              <p>Скористайтеся вигідними пропозиціями на спортивний інвентар</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="container">
+          <h2>Новини та статті</h2>
+          <div class="news-grid">
+            <article>
+					<a href="articles.html">
+              <img src="img/Untitled Project (4).jpg" alt="Новини" />
+				</a>
+              <h3>Нові надходження</h3>
+              <p>
+                Ми отримали нові колекції одягу та обладнання. Завітайте до
+                нашого каталогу, щоб побачити більше!Скористайтеся нашими знижками та акціями. Знижки до 50% на вибрані товари! Не пропустіть можливість придбати високоякісні спорядження для свого улюбленого виду спорту за найкращими цінами.
+              </p>
+		
+            </article>
+            <article>
+					<a href="articles.html">
+              <img src="img/Untitled Project (11).jpg" alt="Спеціальні пропозиції" />
+				</a>
+              <h3>Спеціальні пропозиції</h3>
+              <p>
+                Скористайтеся нашими знижками та акціями. Знижки до 50% на
+                вибрані товари! Не пропустіть можливість придбати високоякісні спорядження для свого улюбленого виду спорту за найкращими цінами. Ми пропонуємо широкий асортимент товарів від провідних брендів, щоб задовольнити потреби навіть найпретензійніших спортсменів.
+              </p>
+				
+            </article>
+          </div>
+        </div>
+      </section>
+		<section class="categories">
+			<div class="container">
+				 <h3>Категорії</h3>
+				 <ul>
+					  <li><a href="#">Спорт</a></li>
+					  <li><a href="#">Активний відпочинок</a></li>
+					  <li><a href="#">Фітнес</a></li>
+					  <li><a href="#">Харчування</a></li>
+				 </ul>
+			</div>
+	  </section>
+
+	  <section class="authors">
+			<div class="container">
+				 <h3>Наші автори</h3>
+				 <ul>
+					  <li><a href="#">Автор 1</a></li>
+					  <li><a href="#">Автор 2</a></li>
+					  <li><a href="#">Автор 3</a></li>
+				 </ul>
+			</div>
+	  </section>
+
+	  <section class="comments">
+			<div class="container">
+				 <h3>Залишити коментар</h3>
+				 <form>
+					  <label for="name">Ім'я:</label>
+					  <input type="text" id="name" name="name" required>
+					  
+					  <label for="comment">Коментар:</label>
+					  <textarea id="comment" name="comment" required></textarea>
+					  
+					  <button type="submit" class="btn">Відправити</button>
+				 </form>
+			</div>
+	  </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Магазин Спортивних Товарів. Всі права захищені.</p>
+      </div>
+    </footer>
+  </body>
+</html>
